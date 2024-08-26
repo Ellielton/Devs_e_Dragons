@@ -14,3 +14,21 @@ const personagemJose = {
     tipo: 'Arqueiro',
 }
 
+//Criando a personagem Ana 
+const personagemAna = {
+    nome: "Ana",
+    vida: 8,
+    mana: 10
+}
+
+//Criando um model de persongem para ser reaproveitavél
+class Personagem {
+    nome
+    vida
+    mana
+}
+
+const personagemPedrinho = new Personagem()
+personagemPedrinho.nome = "Pedrinho"
+personagemPedrinho.mana = 12
+personagemPedrinho.vida = 7 
