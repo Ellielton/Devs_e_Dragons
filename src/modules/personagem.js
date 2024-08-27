@@ -8,9 +8,9 @@
   descricao
 
   constructor(nome, level, tipo) {
-    this.nome
-    this.level
-    this.tipo
+    this.nome = nome
+    this.level = level
+    this.tipo = tipo
   }
 
   obterInsignia() {
