@@ -1,12 +1,13 @@
 import { Personagem } from "./modules/personagem.js"
 import { PersonagemView } from "./components/personagem-view.js"
 import { Mago } from "./modules/mago.js"
-  
-const personagemPedrinho = new Personagem('Pedrinho', 5, 'Mago')
-const personagemJose = new Personagem('Jose', 3, 'Arqueiro')
 
-// array de personagens usado no constructor
-const personagens = [personagemPedrinho,personagemJose]
+//Instãncias da class filho, esta que cria também a class pai
+const magoAntônio = new Mago('Antônio', 4, 'fogo', 4, 3)
+const magaJulhia = new Mago('Júlia', 8, 'gelo', 7, 10)
+
+// array de instâncias que alimenta a função reder no arquivo personagem-view.js
+const personagens = [magoAntônio, magaJulhia]
 
 //Instância o objeto persongemView e já executga a função render.
 new PersonagemView(personagens).render()
