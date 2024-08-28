@@ -1,8 +1,8 @@
 //Criando um modelo de persongem para ser reaproveitavél
  export class Personagem {
   nome
-  vida
-  mana
+  vida = 100
+  mana = 100
   level
   tipo
   descricao
@@ -11,6 +11,7 @@
     this.nome = nome
     this.level = level
     this.tipo = tipo
+    
   }
 
   obterInsignia() {
