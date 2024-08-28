@@ -10,8 +10,7 @@
   constructor(nome, level, tipo) {
     this.nome = nome
     this.level = level
-    this.tipo = tipo
-    
+    this.tipo = tipo  
   }
 
   obterInsignia() {
